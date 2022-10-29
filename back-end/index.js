@@ -2,6 +2,9 @@
 const express = require('express');
 const userRouter = require('./routers/userRouter');
 const compRouter = require('./routers/compRouter');
+const util = require('./routers/util');
+
+
 const cors = require('cors');
 
 // initiliazing express
@@ -16,6 +19,7 @@ app.use(cors({ origin: ['http://localhost:3000'] }));
 
 app.use('/user', userRouter);
 app.use('/comp', compRouter);
+app.use('/util', util);
 
 // route
 app.get('/', (req, res) => {
