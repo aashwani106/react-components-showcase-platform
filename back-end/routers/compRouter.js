@@ -1,7 +1,7 @@
 // to process user requests only
 const express = require('express');
 const router = express.Router();
-const Model = require('../models/userModel');
+const Model = require('../models/compModel');
 
 // Response Codes
 // 200 - Successfull
